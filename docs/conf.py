@@ -43,7 +43,16 @@ html_theme_options = {
     "path_to_docs": "docs",
     "show_toc_level": 2,
     "navigation_with_keys": True,
+    "logo": {
+        "image_light": "https://cdn.ucl.ac.uk/logos/ucl/ucl-logo--secondary.svg",
+        "image_dark": "https://cdn.ucl.ac.uk/logos/ucl/ucl-logo--secondary-inverted.svg",
+    },
 }
+
+# Custom CSS
+html_css_files = [
+    "ucl-overrides.css",
+]
 
 # Exclude patterns
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]

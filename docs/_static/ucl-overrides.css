@@ -1,0 +1,414 @@
+/*
+ * UCL Design System — CSS Overrides for Sphinx Book Theme
+ *
+ * Colour tokens derived from UCL's brand visual guidelines:
+ * https://www.ucl.ac.uk/brand-and-experience/brand/visual-guidelines/colour
+ *
+ * Design system foundations reference:
+ * https://design-system.ucl.ac.uk/
+ *
+ * Spacing follows the UCL design system 8px base unit.
+ */
+
+/* ============================================================
+   UCL Design Tokens
+   ============================================================ */
+
+:root {
+  /* Lead colours */
+  --ucl-dark-purple: #500778;
+  --ucl-white: #FFFFFF;
+  --ucl-bright-purple: #AC145A;
+  --ucl-mid-purple: #8C1A6A;
+
+  /* Supporting colours */
+  --ucl-light-purple: #D6C4E0;
+  --ucl-pale-purple: #F3E9F5;
+  --ucl-heritage-blue: #002855;
+
+  /* Functional colours */
+  --ucl-text-primary: #1D1D1B;
+  --ucl-text-secondary: #4A4A4A;
+  --ucl-border: #D6C4E0;
+  --ucl-background: #FAFAFA;
+
+  /* Spacing — 8px base unit */
+  --ucl-space-1: 8px;
+  --ucl-space-2: 16px;
+  --ucl-space-3: 24px;
+  --ucl-space-4: 32px;
+  --ucl-space-5: 40px;
+  --ucl-space-6: 48px;
+  --ucl-space-8: 64px;
+
+  /* Typography */
+  --ucl-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --ucl-font-size-base: 1rem;
+  --ucl-line-height: 1.6;
+}
+
+
+/* ============================================================
+   Sphinx Book Theme — Variable Overrides
+   ============================================================ */
+
+html {
+  --pst-color-primary: var(--ucl-dark-purple);
+  --pst-color-primary-bg: var(--ucl-pale-purple);
+  --pst-color-link: var(--ucl-dark-purple);
+  --pst-color-link-hover: var(--ucl-mid-purple);
+}
+
+html[data-theme="light"] {
+  --pst-color-primary: var(--ucl-dark-purple);
+  --pst-color-primary-bg: var(--ucl-pale-purple);
+  --pst-color-secondary: var(--ucl-mid-purple);
+  --pst-color-secondary-bg: var(--ucl-light-purple);
+  --pst-color-accent: var(--ucl-bright-purple);
+  --pst-color-link: var(--ucl-dark-purple);
+  --pst-color-link-hover: var(--ucl-mid-purple);
+  --pst-color-text-base: var(--ucl-text-primary);
+  --pst-color-text-muted: var(--ucl-text-secondary);
+  --pst-color-border: var(--ucl-border);
+  --pst-color-background: var(--ucl-background);
+}
+
+html[data-theme="dark"] {
+  --pst-color-primary: var(--ucl-light-purple);
+  --pst-color-primary-bg: #2A1040;
+  --pst-color-secondary: var(--ucl-light-purple);
+  --pst-color-accent: var(--ucl-bright-purple);
+  --pst-color-link: var(--ucl-light-purple);
+  --pst-color-link-hover: var(--ucl-pale-purple);
+}
+
+
+/* ============================================================
+   Header / Navbar
+   ============================================================ */
+
+.bd-header {
+  background-color: var(--ucl-dark-purple) !important;
+  border-bottom: 3px solid var(--ucl-bright-purple);
+}
+
+.bd-header .navbar-brand,
+.bd-header .nav-link,
+.bd-header .btn {
+  color: var(--ucl-white) !important;
+}
+
+.bd-header .nav-link:hover,
+.bd-header .btn:hover {
+  color: var(--ucl-light-purple) !important;
+}
+
+/* Site title in header */
+.navbar-brand p,
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+
+/* ============================================================
+   Sidebar Navigation
+   ============================================================ */
+
+.bd-sidebar-primary {
+  border-right: 1px solid var(--ucl-border);
+}
+
+.bd-sidebar-primary .sidebar-primary-items__start .toctree-l1 > a,
+.bd-sidebar-primary nav.bd-links a {
+  color: var(--ucl-text-primary);
+  border-left: 3px solid transparent;
+  padding-left: var(--ucl-space-2);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.bd-sidebar-primary .sidebar-primary-items__start .toctree-l1 > a:hover,
+.bd-sidebar-primary nav.bd-links a:hover {
+  color: var(--ucl-dark-purple);
+  border-left-color: var(--ucl-bright-purple);
+}
+
+.bd-sidebar-primary .sidebar-primary-items__start .toctree-l1 > a.current,
+.bd-sidebar-primary nav.bd-links a.current {
+  color: var(--ucl-dark-purple);
+  font-weight: 600;
+  border-left-color: var(--ucl-dark-purple);
+  background-color: var(--ucl-pale-purple);
+}
+
+
+/* ============================================================
+   Typography
+   ============================================================ */
+
+body {
+  font-family: var(--ucl-font-family);
+  line-height: var(--ucl-line-height);
+  color: var(--ucl-text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ucl-dark-purple);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-bottom: var(--ucl-space-4);
+  padding-bottom: var(--ucl-space-2);
+  border-bottom: 3px solid var(--ucl-bright-purple);
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: var(--ucl-space-6);
+  margin-bottom: var(--ucl-space-3);
+}
+
+h3 {
+  font-size: 1.35rem;
+  margin-top: var(--ucl-space-5);
+  margin-bottom: var(--ucl-space-2);
+}
+
+
+/* ============================================================
+   Links
+   ============================================================ */
+
+.bd-content a {
+  color: var(--ucl-dark-purple);
+  text-decoration: underline;
+  text-decoration-color: var(--ucl-light-purple);
+  text-underline-offset: 3px;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+.bd-content a:hover {
+  color: var(--ucl-mid-purple);
+  text-decoration-color: var(--ucl-mid-purple);
+}
+
+
+/* ============================================================
+   Tables
+   ============================================================ */
+
+.bd-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: var(--ucl-space-3) 0;
+}
+
+.bd-content table thead th {
+  background-color: var(--ucl-dark-purple);
+  color: var(--ucl-white);
+  font-weight: 600;
+  padding: var(--ucl-space-1) var(--ucl-space-2);
+  text-align: left;
+  border: none;
+}
+
+.bd-content table tbody td {
+  padding: var(--ucl-space-1) var(--ucl-space-2);
+  border-bottom: 1px solid var(--ucl-border);
+}
+
+.bd-content table tbody tr:hover {
+  background-color: var(--ucl-pale-purple);
+}
+
+
+/* ============================================================
+   Admonitions
+   ============================================================ */
+
+.admonition {
+  border-left: 4px solid var(--ucl-dark-purple);
+  background-color: var(--ucl-pale-purple);
+  border-radius: 0 4px 4px 0;
+  padding: var(--ucl-space-2) var(--ucl-space-3);
+  margin: var(--ucl-space-3) 0;
+}
+
+.admonition .admonition-title {
+  color: var(--ucl-dark-purple);
+  font-weight: 700;
+  margin-bottom: var(--ucl-space-1);
+}
+
+.admonition.warning,
+.admonition.caution {
+  border-left-color: var(--ucl-bright-purple);
+  background-color: #FDF2F4;
+}
+
+.admonition.warning .admonition-title,
+.admonition.caution .admonition-title {
+  color: var(--ucl-bright-purple);
+}
+
+.admonition.tip,
+.admonition.hint {
+  border-left-color: var(--ucl-heritage-blue);
+  background-color: #EEF3F8;
+}
+
+.admonition.tip .admonition-title,
+.admonition.hint .admonition-title {
+  color: var(--ucl-heritage-blue);
+}
+
+.admonition.important {
+  border-left-color: var(--ucl-mid-purple);
+  background-color: var(--ucl-pale-purple);
+}
+
+.admonition.important .admonition-title {
+  color: var(--ucl-mid-purple);
+}
+
+
+/* ============================================================
+   Code Blocks
+   ============================================================ */
+
+code {
+  color: var(--ucl-dark-purple);
+  background-color: var(--ucl-pale-purple);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+pre {
+  border: 1px solid var(--ucl-border);
+  border-radius: 4px;
+  padding: var(--ucl-space-2);
+}
+
+
+/* ============================================================
+   Cards (sphinx-design)
+   ============================================================ */
+
+.sd-card {
+  border: 1px solid var(--ucl-border);
+  border-radius: 4px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.sd-card:hover {
+  border-color: var(--ucl-dark-purple);
+  box-shadow: 0 2px 8px rgba(80, 7, 120, 0.12);
+}
+
+.sd-card .sd-card-header {
+  background-color: var(--ucl-pale-purple);
+  border-bottom: 1px solid var(--ucl-border);
+}
+
+
+/* ============================================================
+   Definition Lists (MyST)
+   ============================================================ */
+
+dl dt {
+  color: var(--ucl-dark-purple);
+  font-weight: 600;
+}
+
+dl dd {
+  margin-left: var(--ucl-space-3);
+  margin-bottom: var(--ucl-space-2);
+}
+
+
+/* ============================================================
+   Footer
+   ============================================================ */
+
+.bd-footer {
+  background-color: var(--ucl-dark-purple);
+  color: var(--ucl-white);
+  padding: var(--ucl-space-4) 0;
+}
+
+.bd-footer a {
+  color: var(--ucl-light-purple) !important;
+}
+
+.bd-footer a:hover {
+  color: var(--ucl-white) !important;
+}
+
+
+/* ============================================================
+   Mermaid Diagram Overrides
+   ============================================================ */
+
+.mermaid .node rect,
+.mermaid .node polygon {
+  fill: var(--ucl-pale-purple) !important;
+  stroke: var(--ucl-dark-purple) !important;
+}
+
+.mermaid .node .label {
+  color: var(--ucl-dark-purple) !important;
+}
+
+.mermaid .edgePath .path {
+  stroke: var(--ucl-mid-purple) !important;
+}
+
+.mermaid .cluster rect {
+  fill: var(--ucl-pale-purple) !important;
+  stroke: var(--ucl-light-purple) !important;
+}
+
+.mermaid .cluster text {
+  fill: var(--ucl-dark-purple) !important;
+}
+
+
+/* ============================================================
+   Search
+   ============================================================ */
+
+.search-button__default-text {
+  color: var(--ucl-white) !important;
+}
+
+.search-button__kbd-shortcut {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+
+/* ============================================================
+   Scrollbar (subtle branding)
+   ============================================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ucl-pale-purple);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ucl-light-purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ucl-dark-purple);
+}

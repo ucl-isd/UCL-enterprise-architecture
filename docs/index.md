@@ -8,8 +8,8 @@ Welcome to the UCL Enterprise Architecture documentation. This site provides a s
 :maxdepth: 2
 :caption: Architecture Models
 
-models/business-capability
-models/application-landscape
+models/business-architecture
+models/application-architecture
 models/data-architecture
 models/technology-infrastructure
 ```
@@ -28,8 +28,8 @@ reference/glossary
 UCL's enterprise architecture provides a holistic view of the organisation's strategy, processes, information, and technology assets. This documentation serves as the canonical reference for architecture decisions, models, and standards.
 
 :::{card} Quick Links
-:link: models/business-capability
+:link: models/business-architecture
 :link-type: doc
 
-Explore the business capability model to understand UCL's core functions and how they map to technology.
+Explore the business architecture to understand UCL's core functions and how they map to technology.
 :::
