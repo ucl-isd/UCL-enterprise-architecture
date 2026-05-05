@@ -9,9 +9,9 @@ The {term}`Digital Strategic Plan` metamodel describes how UCL's strategic plann
 | EAS Element | UCL Term |
 |---|---|
 | {term}`Business Driver` | 4 areas in 22–27 strategic plan |
-| {term}`Business Goal` | UCL Objective (4 big things) |
-| {term}`Business Objective` | UCL Capability |
-| {term}`Strategic Plan` | UCL Strategic Initiative |
+| {term}`Business Goal` | UCL Objectives (the 3 or 4 priorities for that business area) |
+| {term}`Business Objective` | long running objectives over the next 7 years |
+| {term}`Strategic Plan` | UCL Strategic Initiative - a long running programme of change consisting may be linked to many lean business cases and Epics in delivery |
 | {term}`Performance Indicator` | {term}`KPI` |
 | {term}`Roadmap` | Roadmap |
 

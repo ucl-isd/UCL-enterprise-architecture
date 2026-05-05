@@ -38,7 +38,7 @@ JANET
   Joint Academic Network. The UK's national research and education network.
 
 KPI
-  Key Performance Indicator. A measurable value that tracks progress against objectives and capabilities. Linked to both Business Goals and Business Objectives. Modelled as **Performance Indicator** in Essential (EAS).
+  [UCL institutional KPI](https://liveuclac.sharepoint.com/sites/UCLstrategicplan/SitePages/UCL's-Key-Performance-Indicators.aspx)
 
 Performance Indicator
   See {term}`KPI`.
