@@ -2,7 +2,7 @@
 
 ## Digital Strategic Plan Metamodel
 
-The Digital Strategic Plan metamodel describes how UCL's strategic planning elements are structured and related. These elements are documented in Essential (EAS), our enterprise architecture tool, using its standard object types mapped to UCL-specific terminology.
+The {term}`Digital Strategic Plan` metamodel describes how UCL's strategic planning elements are structured and related. These elements are documented in Essential (EAS), our enterprise architecture tool, using its standard object types mapped to UCL-specific terminology.
 
 ### EAS to UCL Mapping
 
@@ -18,22 +18,19 @@ The Digital Strategic Plan metamodel describes how UCL's strategic planning elem
 ### Metamodel Relationships
 
 ```{mermaid}
-graph TD
-    BD[Business Driver]
-    BG[Business Goal]
-    BO[Business Objective]
-    SP[Strategic Plan]
-    PI[Performance Indicator]
-    RM[Roadmap]
-
-    BD --> BG
-    BG --> BO
-    BG --> PI
-    BO --> PI
-    BO --> SP
-    SP --> RM
-    PI -.-> RM
+erDiagram
+    BUSINESS-DRIVER ||--|| BUSINESS-GOAL : drives
+    BUSINESS-GOAL ||--o{ BUSINESS-OBJECTIVE : "decomposes to"
+    BUSINESS-OBJECTIVE }o--o{ STRATEGIC-PLAN : "realised by"
+    BUSINESS-OBJECTIVE }o--o{ PERFORMANCE-INDICATOR : "measured by"
+    BUSINESS-OBJECTIVE }o--|| BUSINESS-MODEL : "part of"
+    BUSINESS-MODEL ||--o{ PERFORMANCE-INDICATOR : "tracked by"
+    BUSINESS-MODEL ||--|| ROADMAP : "planned on"
+    STRATEGIC-PLAN }o--|| ROADMAP : "scheduled on"
 ```
+
+
+
 
 :::{tip}
 All terms link to the {doc}`../reference/glossary` where full definitions and UCL context are provided.

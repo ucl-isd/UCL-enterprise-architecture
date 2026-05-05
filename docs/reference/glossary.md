@@ -22,6 +22,9 @@ Business Objective
 COTS
   Commercial Off-The-Shelf. Software products available for purchase rather than custom-built.
 
+Digital Strategic Plan
+  The UCL Digital Strategic Plan 2026–32 sets out the university's strategic ambitions and objectives over seven years, and outlines the high-level digital activity needed to support these goals. It is jointly developed by the Office of the Chief Information Officer, the Office for the President & Provost and Strategic Change, and co-created with the broader UCL community. The plan provides oversight of future investment needs, helps prioritise and sequence competing activity, and promotes a set of guiding Digital Principles for consistent decision-making. See [UCL Digital Strategic Plan 2026-32](https://www.ucl.ac.uk/isd/about-ucl-isd/digital-strategy-under-development).
+
 DPIA
   Data Protection Impact Assessment. A process to identify and minimise data protection risks.
 
