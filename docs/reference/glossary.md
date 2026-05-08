@@ -47,7 +47,7 @@ RBAC
   Role-Based Access Control. An approach to restricting system access based on user roles.
 
 Roadmap
-  A time-based delivery view showing when Strategic Initiatives will be executed. Roadmaps are generated from Strategic Plans and can also reflect KPI milestones. Modelled as **Roadmap** in Essential (EAS).
+  A time-based delivery view showing when Strategic Initiatives will be executed. Roadmaps are generated from Strategic Plans. Modelled as **Roadmap** in Essential (EAS).
 
 RPO
   Recovery Point Objective. The maximum acceptable amount of data loss measured in time.

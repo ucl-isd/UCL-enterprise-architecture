@@ -56,3 +56,6 @@ html_css_files = [
 
 # Exclude patterns
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+
+# Mermaid — use raw SVG so that click links work in diagrams
+mermaid_output_format = "raw"

@@ -8,10 +8,10 @@ Welcome to the UCL Enterprise Architecture documentation. This site provides a s
 :maxdepth: 2
 :caption: Architecture Models
 
-models/business-architecture
-models/application-architecture
-models/data-architecture
-models/technology-infrastructure
+models/enterprise/index
+models/business/index
+models/application/index
+models/technology/index
 ```
 
 ```{toctree}
@@ -28,8 +28,8 @@ reference/glossary
 UCL's enterprise architecture provides a holistic view of the organisation's strategy, processes, information, and technology assets. This documentation serves as the canonical reference for architecture decisions, models, and standards.
 
 :::{card} Quick Links
-:link: models/business-architecture
+:link: models/enterprise/digital-strategic-plan
 :link-type: doc
 
-Explore the business architecture to understand UCL's core functions and how they map to technology.
+Explore the Digital Strategic Plan metamodel to understand how UCL's strategic elements connect.
 :::
