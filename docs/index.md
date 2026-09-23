@@ -1,9 +1,20 @@
-# UCL Enterprise Architecture
+# UCL Digital Architecture Library
 
-Welcome. This site is being rebuilt. Content will be added here soon.
+The UCL Digital Architecture Library (DAL) documents the metamodels, data models,
+and views used to describe UCL's digital architecture.
 
 ```{toctree}
 :maxdepth: 2
-:hidden:
+:caption: Domains
 
+digital-strategy/index
+institutional-risk/index
+application-landscape/index
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: Reference
+
+reference/glossary
 ```

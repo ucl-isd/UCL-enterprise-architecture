@@ -1,7 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-project = "UCL Enterprise Architecture"
+project = "UCL Digital Architecture Library"
 copyright = "2026, UCL"
 author = "UCL"
 
@@ -34,10 +34,11 @@ source_suffix = {
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = "sphinx_book_theme"
-html_title = "UCL Enterprise Architecture"
+html_title = "UCL Digital Architecture Library"
 
 html_theme_options = {
-    "repository_url": "https://github.com/UCL/enterprise-architecture",
+    "repository_url": "https://github.com/ucl-isd/UCL-enterprise-architecture",
+    "repository_branch": "main",
     "use_repository_button": True,
     "use_edit_page_button": True,
     "path_to_docs": "docs",
